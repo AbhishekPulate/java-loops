@@ -5,6 +5,7 @@ class NumberExample1
 	{
 		Scanner sc = new Scanner(System.in);
 		int sum = 0;
+		int sum1 = 0;
 		System.out.print("Enter the number : ");
 		int num = sc.nextInt();
 		int dup = num;
@@ -12,12 +13,18 @@ class NumberExample1
 		{
 			int rem = num % 10;
 			if (rem%2==0)
-		{
+			{
 				sum += rem ;
-		}
+			}
+			else
+			{
+				sum1 +=rem;
+			}
+
 		num /= 10;
 		}
-		System.out.println(sum);
+		System.out.println("Sum of even digits is : "+sum);
+		System.out.println("Sum of odd digits is : "+sum1);
 	}
 }
 		
