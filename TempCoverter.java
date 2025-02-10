@@ -96,7 +96,7 @@ class TempCoverter
 						{
 							if (opt==1)
 							{
-								float convTemp = temp * 9/5 + 32f;
+								float convTemp = temp * 9/5f + 32f;
 								System.out.println(temp+" Celcius to Farenheit is "+convTemp);
 								break;
 							}

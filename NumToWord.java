@@ -7,6 +7,10 @@ class NumToWord
 		System.out.print("Enter a number : ");
 		int num = sc.nextInt();
 		String str = "";
+
+		if (num==0)
+			str = "ZERO";
+	
 		while (num>0)
 		{
 			int rem = num%10;
